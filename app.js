@@ -3,6 +3,7 @@ const path = require('path');
 const Router = require('koa-router');
 const { categoriesList } = require('./controllers/categories');
 const { productsList, productById } = require('./controllers/products');
+const { login } = require('./controllers/login');
 
 const app = new Koa();
 const router = new Router({ prefix: '/api' });
